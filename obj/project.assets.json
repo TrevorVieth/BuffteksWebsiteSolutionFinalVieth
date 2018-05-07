@@ -13124,11 +13124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CIDM-3312-01\\Websitething\\BuffteksWebsiteSolutionFinalVieth\\BuffteksWebsite.csproj",
+      "projectUniqueName": "C:\\CIDM-3312-01\\CIDM-3312-01-Self\\BuffteksWebsiteSolutionViethFinalll\\BuffteksWebsiteSolutionFinalVieth\\BuffteksWebsite.csproj",
       "projectName": "BuffteksWebsite",
-      "projectPath": "C:\\CIDM-3312-01\\Websitething\\BuffteksWebsiteSolutionFinalVieth\\BuffteksWebsite.csproj",
+      "projectPath": "C:\\CIDM-3312-01\\CIDM-3312-01-Self\\BuffteksWebsiteSolutionViethFinalll\\BuffteksWebsiteSolutionFinalVieth\\BuffteksWebsite.csproj",
       "packagesPath": "C:\\Users\\Trevor\\.nuget\\packages\\",
-      "outputPath": "C:\\CIDM-3312-01\\Websitething\\BuffteksWebsiteSolutionFinalVieth\\obj\\",
+      "outputPath": "C:\\CIDM-3312-01\\CIDM-3312-01-Self\\BuffteksWebsiteSolutionViethFinalll\\BuffteksWebsiteSolutionFinalVieth\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
