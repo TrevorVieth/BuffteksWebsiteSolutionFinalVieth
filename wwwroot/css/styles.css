@@ -103,3 +103,36 @@ body {
   color:#64927c;
 }
 
+header {
+  height: 100px;
+  width: 100%;
+  background-color:rgb(88, 24, 24);
+}
+
+nav {
+  float: left;
+  width: auto;
+
+  height: 100%; 
+  background-color: rgba(88, 24, 24, 0.116);
+  padding: 20px;
+}
+
+.content {
+
+  background-color: rgb(255, 255, 255);
+  
+  width: 100%;
+  min-height: auto;
+  padding: 5px;
+}
+
+footer {
+  background-color: rgb(88, 24, 24);
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+
+
+}
