@@ -300,10 +300,15 @@ namespace BuffteksWebsite.Controllers
         // POST: Projects/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(EditProjectDetailViewModel EPDVMD)
         {
-            var project = await _context.Projects.SingleOrDefaultAsync(m => m.ID == id);
-            _context.Projects.Remove(project);
+            var projectAddedTo = await _context.Projects.SingleOrDefaultAsync(Pro => Pro.ID == EPDVMD.ProjectID);
+            var participantToAdd = await _context.Members.SingleOrDefaultAsync(Mem => Mem.ID == EPDVMD.SelectedID);
+            var projectAddedToId = await _context.ProjectRoster.SingleOrDefaultAsync(Pro => Pro.ProjectID == EPDVMD.ProjectID);
+          
+
+            // _context.Projects.Remove(projectAddedTo);
+            _context.ProjectRoster.Remove(projectAddedToId);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -312,5 +317,9 @@ namespace BuffteksWebsite.Controllers
         {
             return _context.Projects.Any(e => e.ID == id);
         }
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+
+       
     }
 }
