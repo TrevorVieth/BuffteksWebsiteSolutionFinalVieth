@@ -218,10 +218,18 @@ namespace BuffteksWebsite.Controllers
         // public async Task<IActionResult> AddConfirmed(string id)
         // {
         //     // var participant = EditProjectParticipants.SelectListItem();--------------------------------------------------------------------
-        //     var participant = EditProjectParticipants.membersSelectList;
+        //     //var participant = EditProjectDetailViewModel.ProjectMembersList;
+            
+        //     var participant = EditProjectDetailViewModel.ProjectMembersList(m => m.ID == id);
         //     _context.ProjectRoster.Add(participant);
         //     await _context.SaveChangesAsync();
         //     return RedirectToAction(nameof(Index));
+
+        //     // var participant = await _context.Members.SingleOrDefaultAsync(m => m.ID == id);
+        //     // _context.ProjectRoster.Add(participant);
+        //     // await _context.SaveChangesAsync();
+        //     // return RedirectToAction(nameof(Index));
+            
             
         // }
 
