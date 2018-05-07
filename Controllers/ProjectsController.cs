@@ -305,7 +305,8 @@ namespace BuffteksWebsite.Controllers
             var projectAddedTo = await _context.Projects.SingleOrDefaultAsync(Pro => Pro.ID == EPDVMD.ProjectID);
             var participantToAdd = await _context.Members.SingleOrDefaultAsync(Mem => Mem.ID == EPDVMD.SelectedID);
             var projectAddedToId = await _context.ProjectRoster.SingleOrDefaultAsync(Pro => Pro.ProjectID == EPDVMD.ProjectID);
-          ProjectRoster chick = new ProjectRoster
+            
+            ProjectRoster chick = new ProjectRoster
             {
                 ProjectID = projectAddedTo.ID,
                 Project = projectAddedTo,
@@ -313,7 +314,10 @@ namespace BuffteksWebsite.Controllers
                 ProjectParticipant = participantToAdd
             };
             //this writes a new record to the database
+            _context.ProjectRoster.Attach (chick);
             _context.ProjectRoster.Remove (chick);
+
+            
 
             // _context.Projects.Remove(projectAddedTo);
             // _context.ProjectRoster.Remove(projectAddedToId);
